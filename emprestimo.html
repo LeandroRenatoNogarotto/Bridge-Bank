@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BridgeBank-Emprestimo</title>
+    <link rel="icon" href="images/golden-gate.png" type="image/png">
+    <link rel="stylesheet" href="./style/emprestimo_style.css">
+
+  </head>
+  <body>
+    
+  <h1 id="main">Emprestimo - Bridge</h1>
+        <div>
+        <h2>Podemos te conectar ao seu sonho!!!</h2>
+    </div> 
+   <div class="container">
+        
+        <div id="emprestimo">
+            <form action="emprestar" id="formEmprestimo">
+             <label>Valor total do empréstimo: </label>
+             <input id="valorEmprestimo" type="number" placeholder="R$ " required>
+             <br>
+             <label>Parcelas: </label>
+             <input type="range" class="form-range parcelas" name="vol" value="0" min="0" max="100" step="6"
+             oninput="display.value=value" onchange="display.value=value" id="parcelas">
+            <input type="text" id="display" value="0" readonly>
+        
+            <button type="submit" id="simular">Simular empréstimo</button>
+        </form>
+        </div>
+    </div> 
+    <button class="btn-hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        <span class="hamburguer material-symbols-outlined">MENU</span>
+    </button>
+    <section class="side-bar">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <a href="./home.html" class="card-menu">
+                <span>Login</span>
+            </a>
+            <a href="./pagamentos.html" class="card-menu">
+                <span>Pagamentos</span>
+            </a>
+            <a href="./extrato.html" class="card-menu">
+                <span>Extrato</span>
+            </a>
+            <a href="./emprestimo.html" class="card-menu">
+                <span>Emprestimo</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="JavaScript/menu.js"></script>
+  </body>
+</html>

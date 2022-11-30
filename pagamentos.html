@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BridgeBank Pagamentos</title>
+    <link rel="icon" href="images/golden-gate.png" type="image/png">
+    <link rel="stylesheet" href="style/pagamentos_style.css" />
+  </head>
+  <body>
+    <header>
+        <h1 id="logo">Transferências</h1>
+        <h2>Saldo em conta: <span id="valor">R$0,00</span></h2>
+    </header>
+    
+    <div class="container" id="transferencia">
+      <form id="transForm" action="transfere">
+        <h4>Valor:
+        <input type="number" class="contai" placeholder=" " id="valor_tranferencia" required>
+        </h4>
+        <fieldset>
+            <h3>DESTINATARIO:</h3>
+            <label>Banco:</label>
+            <input type="text" placeholder="Banco"  id="banco" required>
+            <div>
+                <label>Agência: </label>
+                <input type="number" placeholder="0000"  id="agencia" required>
+                <label>Conta: </label>
+                <input type="text" placeholder="0000000-0"  id="conta" required>
+            </div>
+            <div>
+                <label>Tipo de transação: </label>
+                <select id="tipoDaTransacao" required>
+                    <option>PIX</option>
+                    <option>TED</option>
+                </select>
+                <label>Data: </label>
+                <input id="dataTransacao" type="date" placeholder="dd/mm/aaaa" required>
+            </div>
+            <label>Descrição: </label>
+            <textarea id="descricao"  placeholder="Descrição"></textarea>
+        </fieldset>
+        <button type="submit">Transferir</button>
+      </form>
+    </div>
+    
+</div> 
+<button class="btn-hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    <span class="hamburguer material-symbols-outlined">MENU</span>
+</button>
+<section class="side-bar">
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+        <a href="./home.html" class="card-menu">
+            <span>Login</span>
+        </a>
+        <a href="./pagamentos.html" class="card-menu">
+            <span>Pagamentos</span>
+        </a>
+        <a href="./extrato.html" class="card-menu">
+            <span>Extrato</span>
+        </a>
+        <a href="./emprestimo.html" class="card-menu">
+            <span>Emprestimo</span>
+        </a>
+    </div>
+
+    <script src="js/.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,138 @@
+
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("../Images/4k6.jpg");
+    margin: 0 auto;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    font-size: larger;
+}
+
+h4
+{
+    text-align: center;
+    font-size:xx-large;
+}
+
+fieldset{
+
+    background-color: rgb(228, 238, 244);
+}
+
+#display{
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+.btn-hamburguer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 0;
+    color: #FFF;
+    .hamburguer{
+        font-size: 40px;
+        position: absolute;
+    }
+    z-index: 1;
+}
+.side-bar{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(10, 10, 10, 0.86);
+    top: 0;
+    a{
+        color: #FFF;
+        display: block;
+        min-width: 250px;
+        text-align: center;
+        text-decoration: none;
+        margin: 30px 0;
+    }    
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: #FFF;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 98;
+	background-color: #12002F;
+	padding-top: 120px;
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+.mobile-nav a {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto 16px;
+	text-align: center;
+	padding: 12px 16px;
+	background-color: #1f103F;
+
+	color: #FFF;
+	text-decoration: none;
+}
+
+.mobile-nav a:hover {
+	background-color: #24104f;
+}
