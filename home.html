@@ -26,10 +26,17 @@
                     <h1>BridgeBank<h1>
                     <h2>Conectando você aos seus maiores Sonhos...</h2>
                     </br>
-                    <input type="text" id="CPF" placeholder="CPF" required>
+                    <input onclick="leCpf()" type="text" id="cpf" placeholder="CPF" required>
                     <input type="text" id="senha" placeholder="senha" required>
-                    <button  id="submit"> <a href="menu.html" class="card-login"> Entrar </a></button>
-                   
+
+                    <button onclick="leCpf()" id="submit">  <a href="menu.html" class="card-login"> Entrar </a></button>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" id="comment">  
+                    </textarea>
+
+                    </div>
+                    
                 </form>
             </div>
         </div>
